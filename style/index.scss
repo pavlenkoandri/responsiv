@@ -1,0 +1,559 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+}
+
+header,
+section,
+footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 24px 10px;
+}
+li {
+    list-style: none;
+}
+.nav-search,
+.nav-burger {
+    height: 20px;
+}
+.nav-burger {
+    margin-left: 20px;
+}
+.nav-list-wrapper {
+    display: flex;
+}
+.img-fon {
+    background-image: url("/img/general/bg-image.png");
+    background-size: cover;
+    width: 100%;
+}
+.nav-list {
+    display: none;
+    li {
+        margin-right: 42px;
+        font-family: "Lato";
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #000000;
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            border: 1px solid #000000;
+            width: 80%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 300ms;
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+h2 {
+    font-family: "Red Hat Display";
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h3 {
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    font-size: 23px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+p {
+    font-family: "Lato";
+    font-size: 16px;
+    color: #7b7b7b;
+}
+section {
+    padding-top: 70px;
+}
+footer {
+    margin-top: 70px;
+    background: #f4f4f4;
+    padding-top: 70px;
+}
+.hero {
+    padding-bottom: 230px;
+}
+
+.text-list {
+    font-family: "Lato";
+    font-size: 16px;
+    color: #7b7b7b;
+    padding-bottom: 30px;
+}
+.text-time {
+    font-size: 16px;
+    color: #7b7b7b;
+    padding-bottom: 40px;
+}
+.arroow {
+    padding-bottom: 37px;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+}
+.title-bloc {
+    display: flex;
+    margin-bottom: 30px;
+}
+.holder-img,
+.text-holder-min {
+    margin-bottom: 50px;
+}
+.conteiner-blog {
+    display: flex;
+    flex-direction: column;
+}
+.conteiner-blog-title {
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+span {
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+}
+.p-date {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.btn {
+    background: #565656;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    width: 180px;
+    height: 46px;
+    color: #fff;
+}
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.span-riset {
+    font-weight: 600;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+.time-span {
+    font-family: "Red Hat Display";
+    font-size: 24px;
+    color: #000000;
+}
+.time-p {
+    font-family: "Lato";
+    font-size: 19px;
+    color: #565656;
+    margin-top: 35px;
+}
+.time-holder {
+    display: flex;
+    flex-direction: column;
+}
+.p-date-text {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.arrow-right {
+    margin-right: auto;
+}
+.footer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .namber {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: "Lato";
+        font-size: 18px;
+        color: #000000;
+    }
+    .imail {
+        margin-bottom: 40px;
+        font-family: "Lato";
+        font-size: 18px;
+        color: #000000;
+    }
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+
+    .copyright-text {
+        font-family: "Lato";
+        font-size: 16px;
+        color: #000000;
+    }
+}
+.footer-title {
+    font-family: "Red Hat Display";
+    font-size: 32px;
+    color: #000000;
+}
+.instagram,
+.facebook,
+.twitter,
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #565656;
+    transition: 300ms;
+    &:hover {
+        background-color: #565656;
+        path {
+            fill: #fff;
+        }
+    }
+}
+.img-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 40px;
+}
+@media (min-width: 768px) {
+    header,
+    section,
+    footer {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 190px;
+    }
+    .nav-burger {
+        margin-left: 40px;
+    }
+}
+@media (min-width: 1024px) {
+    header,
+    section,
+    footer {
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 380px;
+    }
+    .nav-burger {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+    }
+    .nav-search {
+        padding-left: 42px;
+    }
+}
+@media (min-width: 1500px) {
+    header,
+    section,
+    footer {
+        padding-left: calc(50% - 720px);
+        padding-right: calc(50% - 720px);
+    }
+}
+@media (min-width: 768px) {
+    .conteiner {
+        width: 100%;
+        position: relative;
+    }
+    h2 {
+        text-align: start;
+    }
+    .text-holder {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .blog {
+        flex-direction: row;
+    }
+    .holder-img {
+        width: 48%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-holder-min {
+        width: 48%;
+    }
+}
+@media (min-width: 1024px) {
+    .conteiner {
+        width: 100%;
+    }
+    .text-holder-min {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+    .conteiner-blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-blog {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        img {
+            width: 48%;
+        }
+    }
+    .post-blog-text {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+    }
+    .post-blog-row {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+        justify-content: space-between;
+        img {
+            width: 48%;
+        }
+    }
+    .date {
+        margin-top: 30px;
+    }
+    .title-fri {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .title-bloc {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .conteiner-blog {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .date {
+        margin-top: 25px;
+    }
+    .post-blog {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        img {
+            width: 100%;
+        }
+    }
+    .post-blog-row {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+    .post-blog-text {
+        width: 100%;
+    }
+
+    .title-fri {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .title-bloc {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .title-fri {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .title-bloc {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+    }
+    .span-riset {
+        font-weight: 500;
+    }
+
+    .conteiner-blog-end {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .post-blog-name {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-blog-n {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title-fri {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        .title-bloc {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+    }
+    .post-blog-name {
+        display: flex;
+        flex-direction: column;
+    }
+    .span-riset {
+        font-weight: 500;
+        font-size: 24px;
+    }
+    .conteiner-blog-end {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .post-blog-n {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-conteiner {
+        margin-bottom: 90px;
+    }
+}
+@media (min-width: 768px) {
+    .time-text-p {
+        display: flex;
+        flex-direction: column;
+    }
+    .time {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
+    .time-p {
+        text-align: end;
+    }
+    .arrow-right {
+        margin-right: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .time {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+    }
+    .p-work {
+        margin-top: 0;
+    }
+}
+@media (min-width: 768px) {
+    .footer-title {
+        font-size: 48px;
+    }
+}
+@media (min-width: 1024px) {
+    .foter-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-title {
+        margin-bottom: 10px;
+    }
+    .foter-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .img-holder {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .img-holder {
+        margin-right: 0;
+        width: 28%;
+    }
+}
