@@ -1,0 +1,141 @@
+.img-fon {
+    background-image: url("/img/general/bg-image.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.hero {
+    padding-bottom: 230px;
+}
+.logo-holder {
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+    }
+}
+.text-list {
+    font-family: "Lato";
+    font-size: 16px;
+    color: #7b7b7b;
+    padding-bottom: 30px;
+}
+.text-time {
+    font-size: 16px;
+    color: #7b7b7b;
+    padding-bottom: 40px;
+}
+.arrow {
+    width: 23px;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+}
+.title-bloc {
+    display: flex;
+    margin-bottom: 30px;
+}
+.holder-img,
+.text-holder-min {
+    margin-bottom: 50px;
+}
+.conteiner-blog {
+    display: flex;
+    flex-direction: column;
+}
+.conteiner-blog-title {
+    font-family: "Red Hat Display";
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+}
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+span {
+    font-family: "Red Hat Display";
+    font-weight: 500;
+    font-size: 22px;
+    color: #000000;
+}
+.p-date {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.btn {
+    background: #565656;
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    width: 180px;
+    height: 46px;
+    color: #fff;
+}
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.span-riset {
+    font-weight: 600;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+.time-span {
+    font-family: "Red Hat Display";
+    font-size: 24px;
+    color: #000000;
+}
+.time-p {
+    font-family: "Lato";
+    font-size: 19px;
+    color: #565656;
+    margin-top: 35px;
+}
+.time-holder {
+    display: flex;
+    flex-direction: column;
+}
+.p-date-text {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.arrow-right {
+    margin-right: auto;
+}
+
+.input-holder {
+    width: 0px;
+    transition: 300ms;
+    overflow: hidden;
+}
+.search-form {
+    &.active {
+        .input-holder {
+            width: 120px;
+            #search-input {
+                height: 26.6px;
+                border-color: rgb(135, 180, 231);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.search-form {
+    display: flex;
+}
+.nav-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.form-btn {
+    display: flex;
+}

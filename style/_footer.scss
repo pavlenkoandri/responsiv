@@ -1,0 +1,62 @@
+footer {
+    margin-top: 70px;
+    background: #f4f4f4;
+    padding-top: 70px;
+}
+.footer-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .namber {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-family: "Lato";
+        font-size: 18px;
+        color: #000000;
+    }
+    .imail {
+        margin-bottom: 40px;
+        font-family: "Lato";
+        font-size: 18px;
+        color: #000000;
+    }
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+
+    .copyright-text {
+        font-family: "Lato";
+        font-size: 16px;
+        color: #000000;
+    }
+}
+.footer-title {
+    font-family: "Red Hat Display";
+    font-size: 32px;
+    color: #000000;
+}
+.instagram,
+.facebook,
+.twitter,
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #565656;
+    transition: 300ms;
+    &:hover {
+        background-color: #565656;
+        path {
+            fill: #fff;
+        }
+    }
+}
+.img-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 40px;
+}
